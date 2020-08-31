@@ -28,7 +28,7 @@ const publicKeyToAddress = (value, chain, options) => {
         } else {
           const words = bech32.toWords(mainPublicKeyHash)
           words.unshift(0x00)
-          address = bech32.encode('tc', words)
+          address = bech32.encode(bech32Prefix, words)
         }
       } else {
         address = bs58check.encode(Buffer.from(pubKeyHashPrefix + mainPublicKeyHash.toString('hex'), 'hex'))
