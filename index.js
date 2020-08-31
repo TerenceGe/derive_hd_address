@@ -17,7 +17,7 @@ const publicKeyToAddress = (value, chain, options) => {
       const mainPublicKeyHash = hash160(value)
       const scriptHashPrefix = isTestnet ? 'C4' : '05'
       const pubKeyHashPrefix = isTestnet ? '6F' : '00'
-      const bech32Prefix = isTestnet ? 'tc' : 'bt'
+      const bech32Prefix = isTestnet ? 'tc' : 'bc'
 
       let address
 
