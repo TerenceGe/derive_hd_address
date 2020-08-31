@@ -1,0 +1,13 @@
+{
+  "name": "derive_hd_address",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:TerenceGe/derive_hd_address.git",
+  "author": "terencege <terencegehui@yahoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bech32": "^1.1.4",
+    "bip32": "^2.0.5",
+    "bs58check": "^2.1.2"
+  }
+}
